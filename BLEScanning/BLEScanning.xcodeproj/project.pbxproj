@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3044E9AF29F96FB20014D99C /* BLEEntites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044E9AE29F96FB20014D99C /* BLEEntites.swift */; };
+		3044E9B129F971370014D99C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044E9B029F971370014D99C /* AppDelegate.swift */; };
 		30F1E5BE29ED8E5500C75718 /* BLEScanningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1E5BD29ED8E5500C75718 /* BLEScanningApp.swift */; };
-		30F1E5C029ED8E5500C75718 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1E5BF29ED8E5500C75718 /* ContentView.swift */; };
+		30F1E5C029ED8E5500C75718 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1E5BF29ED8E5500C75718 /* MainView.swift */; };
 		30F1E5C229ED8E5600C75718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F1E5C129ED8E5600C75718 /* Assets.xcassets */; };
 		30F1E5C529ED8E5600C75718 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F1E5C429ED8E5600C75718 /* Preview Assets.xcassets */; };
+		30F1E5CD29ED943E00C75718 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 30F1E5CC29ED943E00C75718 /* RxCocoa */; };
+		30F1E5CF29ED943E00C75718 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 30F1E5CE29ED943E00C75718 /* RxRelay */; };
+		30F1E5D129ED943E00C75718 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 30F1E5D029ED943E00C75718 /* RxSwift */; };
+		30F1E5D629ED955200C75718 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1E5D529ED955200C75718 /* MainViewModel.swift */; };
+		30F1E5D829ED95EC00C75718 /* ListBLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1E5D729ED95EC00C75718 /* ListBLE.swift */; };
+		30F1E5DA29F029F800C75718 /* BLEListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1E5D929F029F800C75718 /* BLEListView.swift */; };
+		30F1E5DD29F3A10700C75718 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1E5DC29F3A10700C75718 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3044E9AE29F96FB20014D99C /* BLEEntites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEEntites.swift; sourceTree = "<group>"; };
+		3044E9B029F971370014D99C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30F1E5BA29ED8E5500C75718 /* BLEScanning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEScanning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F1E5BD29ED8E5500C75718 /* BLEScanningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScanningApp.swift; sourceTree = "<group>"; };
-		30F1E5BF29ED8E5500C75718 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30F1E5BF29ED8E5500C75718 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		30F1E5C129ED8E5600C75718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F1E5C429ED8E5600C75718 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30F1E5D529ED955200C75718 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		30F1E5D729ED95EC00C75718 /* ListBLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBLE.swift; sourceTree = "<group>"; };
+		30F1E5D929F029F800C75718 /* BLEListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEListView.swift; sourceTree = "<group>"; };
+		30F1E5DC29F3A10700C75718 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +41,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F1E5D129ED943E00C75718 /* RxSwift in Frameworks */,
+				30F1E5CF29ED943E00C75718 /* RxRelay in Frameworks */,
+				30F1E5CD29ED943E00C75718 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3044E9A629F96DD30014D99C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3044E9B029F971370014D99C /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3044E9A729F96DDD0014D99C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3044E9A829F96DF60014D99C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3044E9AD29F96E620014D99C /* Interfaces */,
+				3044E9AC29F96E580014D99C /* UseCase */,
+				3044E9AB29F96E4B0014D99C /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3044E9A929F96E1F0014D99C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3044E9AA29F96E290014D99C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3044E9AB29F96E4B0014D99C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3044E9AE29F96FB20014D99C /* BLEEntites.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3044E9AC29F96E580014D99C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		3044E9AD29F96E620014D99C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
 		30F1E5B129ED8E5500C75718 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +130,16 @@
 		30F1E5BC29ED8E5500C75718 /* BLEScanning */ = {
 			isa = PBXGroup;
 			children = (
+				3044E9AA29F96E290014D99C /* Infrastructure */,
+				3044E9A929F96E1F0014D99C /* Data */,
+				3044E9A829F96DF60014D99C /* Domain */,
+				3044E9A729F96DDD0014D99C /* Presentation */,
+				3044E9A629F96DD30014D99C /* Application */,
+				30F1E5DB29F3A0E700C75718 /* Utility */,
+				30F1E5D429ED94BC00C75718 /* Model */,
+				30F1E5D329ED94AE00C75718 /* ViewModels */,
+				30F1E5D229ED946600C75718 /* View */,
 				30F1E5BD29ED8E5500C75718 /* BLEScanningApp.swift */,
-				30F1E5BF29ED8E5500C75718 /* ContentView.swift */,
 				30F1E5C129ED8E5600C75718 /* Assets.xcassets */,
 				30F1E5C329ED8E5600C75718 /* Preview Content */,
 			);
@@ -65,6 +152,39 @@
 				30F1E5C429ED8E5600C75718 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30F1E5D229ED946600C75718 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30F1E5BF29ED8E5500C75718 /* MainView.swift */,
+				30F1E5D929F029F800C75718 /* BLEListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30F1E5D329ED94AE00C75718 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30F1E5D529ED955200C75718 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30F1E5D429ED94BC00C75718 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30F1E5D729ED95EC00C75718 /* ListBLE.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30F1E5DB29F3A0E700C75718 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				30F1E5DC29F3A10700C75718 /* Logger.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +203,11 @@
 			dependencies = (
 			);
 			name = BLEScanning;
+			packageProductDependencies = (
+				30F1E5CC29ED943E00C75718 /* RxCocoa */,
+				30F1E5CE29ED943E00C75718 /* RxRelay */,
+				30F1E5D029ED943E00C75718 /* RxSwift */,
+			);
 			productName = BLEScanning;
 			productReference = 30F1E5BA29ED8E5500C75718 /* BLEScanning.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +236,9 @@
 				Base,
 			);
 			mainGroup = 30F1E5B129ED8E5500C75718;
+			packageReferences = (
+				30F1E5CB29ED943E00C75718 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 30F1E5BB29ED8E5500C75718 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30F1E5C029ED8E5500C75718 /* ContentView.swift in Sources */,
+				3044E9B129F971370014D99C /* AppDelegate.swift in Sources */,
+				30F1E5C029ED8E5500C75718 /* MainView.swift in Sources */,
+				30F1E5DD29F3A10700C75718 /* Logger.swift in Sources */,
+				3044E9AF29F96FB20014D99C /* BLEEntites.swift in Sources */,
 				30F1E5BE29ED8E5500C75718 /* BLEScanningApp.swift in Sources */,
+				30F1E5D629ED955200C75718 /* MainViewModel.swift in Sources */,
+				30F1E5DA29F029F800C75718 /* BLEListView.swift in Sources */,
+				30F1E5D829ED95EC00C75718 /* ListBLE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +398,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BLEScanning/Preview Content\"";
 				DEVELOPMENT_TEAM = CTS6F3D4RX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BLESanner;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +419,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinugi011.BLEScanning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,12 +431,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BLEScanning/Preview Content\"";
 				DEVELOPMENT_TEAM = CTS6F3D4RX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BLESanner;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +452,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinugi011.BLEScanning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +481,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30F1E5CB29ED943E00C75718 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30F1E5CC29ED943E00C75718 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30F1E5CB29ED943E00C75718 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		30F1E5CE29ED943E00C75718 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30F1E5CB29ED943E00C75718 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		30F1E5D029ED943E00C75718 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30F1E5CB29ED943E00C75718 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30F1E5B229ED8E5500C75718 /* Project object */;
 }
